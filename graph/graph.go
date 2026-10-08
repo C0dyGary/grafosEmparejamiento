@@ -10,7 +10,6 @@ type Graph struct {
 	Edges    []Edge
 }
 
-// Normalize devuelve la arista con U <= V para comparar sin importar el orden.
 func Normalize(u, v int) Edge {
 	if u > v {
 		u, v = v, u
